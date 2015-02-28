@@ -100,7 +100,7 @@ exports.commands = {
 		} else {
 			var text = '/pm ' + by + ', ';
 		}
-		text += '**Source of AA Bot** can be found here: https://github.com/Bryan-0/AA-Bot.';
+		text += '**Source of Suicune Bot** can be found here: https://github.com/Evilkun/AA-Bot.';
 		this.say(con, room, text); 
 	}, 
 	game: function(arg, by, room, con) {
