@@ -21,7 +21,7 @@ exports.commands = {
 		} else {
 			var text = '/pm ' + by + ', ';
 		}
-		text += '**Pokémon Showdown Bot** by: Quinella, TalkTakesTime, and Morfent, (with custom commands by Bryan AA).';
+		text += '**Suicune Bot** bot oficial de Ultimate. Creado por Bryan AA y hosteado por Evilness.';
 		this.say(con, room, text);
 	},
 	help: 'guide',
@@ -500,7 +500,8 @@ exports.commands = {
 				this.chatData[arg].lastSeen ? ', ' + this.chatData[arg].lastSeen : '.');
 		}
 		this.say(con, room, text);
-	},
+	}, 
+	helix: '8ball',
 	'8ball': function(arg, by, room, con) {
 		if (this.canUse('8ball', room, by) || room.charAt(0) === ',') {
 			var text = '';
@@ -511,58 +512,28 @@ exports.commands = {
 		var rand = ~~(20 * Math.random()) + 1;
 
 		switch (rand) {
-	 		case 1: text += "Signs point to yes."; break;
-	  		case 2: text += "Yes."; break;
-			case 3: text += "Reply hazy, try again."; break;
-			case 4: text += "Without a doubt."; break;
-			case 5: text += "My sources say no."; break;
-			case 6: text += "As I see it, yes."; break;
-			case 7: text += "You may rely on it."; break;
-			case 8: text += "Concentrate and ask again."; break;
-			case 9: text += "Outlook not so good."; break;
-			case 10: text += "It is decidedly so."; break;
-			case 11: text += "Better not tell you now."; break;
-			case 12: text += "Very doubtful."; break;
-			case 13: text += "Yes - definitely."; break;
-			case 14: text += "It is certain."; break;
-			case 15: text += "Cannot predict now."; break;
-			case 16: text += "Most likely."; break;
-			case 17: text += "Ask again later."; break;
-			case 18: text += "My reply is no."; break;
-			case 19: text += "Outlook good."; break;
-			case 20: text += "Don't count on it."; break;
+	 		case 1: text += "Las señales apuntan a que sí."; break;
+	  		case 2: text += "Sí."; break;
+			case 3: text += "Hay mucha niebla. Inténtalo de nuevo."; break;
+			case 4: text += "Sin lugar a duda."; break;
+			case 5: text += "Mis fuentes dicen que no."; break;
+			case 6: text += "Tal y como lo veo, sí."; break;
+			case 7: text += "Cuenta con ello."; break;
+			case 8: text += "Concéntrate y pregunta de nuevo."; break;
+			case 9: text += "Definitivamente no."; break;
+			case 10: text += "No es buena idea."; break;
+			case 11: text += "Mejor no quieras saber la respuesta."; break;
+			case 12: text += "Muy dudoso."; break;
+			case 13: text += "Sí - Definitivamente."; break;
+			case 14: text += "Es cierto."; break;
+			case 15: text += "No puedo predecir en este momento."; break;
+			case 16: text += "Probablemente."; break;
+			case 17: text += "No entiendo la pregunta."; break;
+			case 18: text += "Mi respuesta es no."; break;
+			case 19: text += "Es buena idea."; break;
+			case 20: text += "No cuentes con ello."; break;
 		}
 		this.say(con, room, text);
-	},
-	whois: function(arg, by, room, con) {
-		if (this.canUse('whois', room, by) || room.charAt(0) === ',') {
-			var text = '';
-		} else {
-			var text = '/pm ' + by + ', ';
-		}
-
-		var rand = Math.floor(20 * Math.random()) + 1;
-
-		switch (rand) {
-	 		case 1: text += "Just another Pokemon Showdown user."; break;
-	  		case 2: text += "A very good competetive pokemon player."; break;
-			case 3: text += "A worthy opponent."; break;
-			case 4: text += "Generally, a bad user."; break;
-			case 5: text += "Generally, a good user."; break;
-			case 6: text += "Someone who is better than you."; break;
-			case 7: text += "An amazing person."; break;
-			case 8: text += "A beautiful person."; break;
-			case 9: text += "An experienced coder."; break;
-			case 10: text += "A leader."; break;
-			case 11: text += "A Mediocre Player."; break;
-			case 12: text += "An excellent person."; break;
-			case 13: text += "Someone with love inside."; break;
-			case 14: text += "An annoying person."; break;
-			case 15: text += "A good coder."; break;
-			case 16: text += "A bad coder."; break; 
-			case 17: text += "A nerd."; break;
-		}
-		this.say(con, room, text);  
 	},
 		bryanaa: function(arg, by, room, con) {
 		if (this.hasRank(by, '#~') || room.charAt(0) === ',') {
@@ -570,7 +541,7 @@ exports.commands = {
 		} else {
 			var text = '/pm ' + by + ', ';
 		}
-		text += 'User: **Bryan AA** is my coder.';
+		text += 'El usuario: **Bryan AA** is mi dueño.';
 		this.say(con, room, text);
     },  
 
